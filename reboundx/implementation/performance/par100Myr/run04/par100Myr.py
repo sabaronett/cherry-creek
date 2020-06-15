@@ -154,10 +154,10 @@ for k in range(Nloops):
         proc_time[i] = time.perf_counter() - timer_start
         mem_psutil[i] = memory_usage_psutil()
         
-    writetxt(ts, mass, 'output/m_5Myr.txt')
-    writetxt(ts, radius, 'output/r_5Myr.txt')
+    writetxt(ts, mass, 'output/m_100Myr.txt')
+    writetxt(ts, radius, 'output/r_100Myr.txt')
     for j in range(1, sim.N):
-        fname = 'output/p' + str(j) + '_tides_5Myr.txt'
+        fname = 'output/p' + str(j) + '_tides_100Myr.txt'
         writetxt(ts, a[:, j], path=fname)
     writetxt(proc_time, mem_psutil, 'output/mem.txt')
 
