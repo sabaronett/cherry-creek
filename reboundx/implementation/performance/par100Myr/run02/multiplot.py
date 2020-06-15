@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 
 # load REBOUND data
-data = np.loadtxt('output/m_5Myr.txt') # return (N, 2) array
+data = np.loadtxt('output/m_100Myr.txt') # return (N, 2) array
 ts = data[:, 0]                        # return only 1st col
 mass = data[:, 1]                      # return only 2nd col
-data = np.loadtxt('output/r_5Myr.txt')
+data = np.loadtxt('output/r_100Myr.txt')
 radius = data[:, 1]                    # data in AU
 p = 5                                  # number of planets
 atides = np.zeros([ts.size, p])
 for j in range(1, p):
-    fname = 'output/p' + str(j) + '_tides_5Myr.txt'
+    fname = 'output/p' + str(j) + '_tides_100Myr.txt'
     data = np.loadtxt(fname)
     atides[:, j] = data[:, 1]          # data in AU
 
