@@ -1,0 +1,17 @@
+----
+Job started on Sun Jun 14 18:02:36 PDT 2020
+Working on compute node cp-125-6.local
+PBS_O_WORKDIR is /home/barons2/github/sabaronett/cherry-creek/reboundx/implementation/performance/seq5Myr
+----
+Wall time: 1min 48s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+Wall time: 1min 47s
+----
+Job ended at Sun Jun 14 18:20:36 PDT 2020
