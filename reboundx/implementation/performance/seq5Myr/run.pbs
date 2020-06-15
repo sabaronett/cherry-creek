@@ -13,7 +13,7 @@ echo Working on compute node `cat $PBS_NODEFILE`
 cd $PBS_O_WORKDIR
 echo PBS_O_WORKDIR is `pwd`
 echo ----
-python ./???.py
+python ./seq5Myr.py
 echo ----
 echo Job ended at `date`
 exit 0
