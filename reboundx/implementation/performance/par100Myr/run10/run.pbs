@@ -1,6 +1,6 @@
 #PBS -N rebx_10
 #PBS -l select=1:ncpus=1:mem=1gb
-#PBS -l walltime=01:30:00
+#PBS -l walltime=03:00:00
 #PBS -m abe
 #PBS -q workq
 set -x
