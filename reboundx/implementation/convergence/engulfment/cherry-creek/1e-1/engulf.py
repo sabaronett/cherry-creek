@@ -4,7 +4,6 @@ import os
 import numpy as np
 import rebound
 import reboundx
-from progress.bar import IncrementalBar
 
 # initialize constants
 T0 = 12388.5e6          # Sun's age ~ 5 Myr pre-TRGB (sim start)
@@ -92,19 +91,16 @@ for i,interval in enumerate(intervals):
     ts = np.linspace(0., tmax, Nup)
     mem_psutil = np.zeros(Nup)      # mem usage tracking
     
-    with IncrementalBar('Integrating...', max=Nup,
-        suffix='%(percent).1f%% [ %(elapsed_td)s / %(eta_td)s ]') as bar:
-        try:
-            for j,t in enumerate(ts):
-                sim.move_to_com()
-                sim.integrate(t)
-                ps[0].m = starmass.interpolate(rebx, t=T0+sim.t) # update params
-                ps[0].r = starradius.interpolate(rebx, t=T0+sim.t)
-                ps[0].params["tctl_tau"] = startau.interpolate(rebx, t=T0+sim.t)          
-                mem_psutil[j] = memory_usage_psutil() # record mem usage (MB)
-                bar.next() # update progress bar
-        except rebound.Collision as error:
-            engulf_times[i] = sim.t
+    try:
+        for j,t in enumerate(ts):
+            sim.move_to_com()
+            sim.integrate(t)
+            ps[0].m = starmass.interpolate(rebx, t=T0+sim.t) # update params
+            ps[0].r = starradius.interpolate(rebx, t=T0+sim.t)
+            ps[0].params["tctl_tau"] = startau.interpolate(rebx, t=T0+sim.t)          
+            mem_psutil[j] = memory_usage_psutil() # record mem usage (MB)
+    except rebound.Collision as error:
+        engulf_times[i] = sim.t
 
     # performance
     max_mems[i] = np.amax(mem_psutil)
