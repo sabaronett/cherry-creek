@@ -1,0 +1,16 @@
+cd 1e-1
+qsub run.pbs
+cd ../1e0
+qsub run.pbs
+cd ../1e1
+qsub run.pbs
+cd ../1e2
+qsub run.pbs
+cd ../1e3
+qsub run.pbs
+cd ../1e4
+qsub run.pbs
+cd ../1e5
+qsub run.pbs
+cd ../1e6
+qsub run.pbs
