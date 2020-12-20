@@ -8,7 +8,8 @@ import reboundx
 # initialize constants
 T0 = 12388.5e6                     # Sun's age ~ 5 Myr pre-TRGB (sim start)
 M0 = 0.8868357536545315            # initial mass of star
-init_as = np.arange(0.4, 1.5, 0.1) # in AU
+# init_as = np.arange(0.4, 1.5, 0.1) # in AU
+init_as = np.arange(1.5, 1.51, 0.1) # in AU
 max_mems = np.zeros(init_as.size)
 runtimes = np.zeros(init_as.size)
 
