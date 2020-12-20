@@ -1,0 +1,30 @@
+----
+Job started on Sat Dec 19 20:10:56 PST 2020
+Working on compute node ci-125-14.local
+PBS_O_WORKDIR is /home/barons2/github/sabaronett/cherry-creek/reboundx/implementation/survey/cherry-creek/tides_on/100Mearth
+----
+Two particles collided (d < r1+r2)
+Wall time: 4s
+Two particles collided (d < r1+r2)
+Wall time: 22s
+Two particles collided (d < r1+r2)
+Wall time: 1min 16s
+Two particles collided (d < r1+r2)
+Wall time: 3min 12s
+Two particles collided (d < r1+r2)
+Wall time: 6min 26s
+Two particles collided (d < r1+r2)
+Wall time: 10min 16s
+Two particles collided (d < r1+r2)
+Wall time: 13min 28s
+Two particles collided (d < r1+r2)
+Wall time: 15min 26s
+Two particles collided (d < r1+r2)
+Wall time: 16min 33s
+Two particles collided (d < r1+r2)
+Wall time: 16min 45s
+Two particles collided (d < r1+r2)
+Wall time: 16min 27s
+Wall time: 15min 54s
+----
+Job ended at Sat Dec 19 22:07:14 PST 2020
