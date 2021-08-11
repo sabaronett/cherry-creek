@@ -12,7 +12,7 @@ with open('processes.txt', 'w') as f:
               '-m', 'abe',
               '-N', 'test_{:.1f}au'.format(au),
               '-q', 'small',
-              '--', 'python', './args.py', '{:.1f}'.format(au)]
+              '--', './run.sh', '{:.1f}'.format(au)]
         complete = subprocess.run(rc)
         f.write('args = %s\n'%(complete.args))
         f.write('  returncode = %s\n'%(complete.returncode))
