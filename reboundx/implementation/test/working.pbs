@@ -6,4 +6,6 @@
 #PBS -N working_test
 #PBS -q small
 
-python ./args.py 123
+cd $PBS_O_WORKDIR
+echo PBS_O_WORKDIR is `pwd`
+python args.py 123
