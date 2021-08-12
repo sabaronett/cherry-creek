@@ -1,0 +1,20 @@
+#PBS -j oe
+#PBS -l select=1:ncpus=1:mem=1gb
+#PBS -l walltime=00:01:00
+#PBS -m abe
+#PBS -M barons2@unlv.nevada.edu
+#PBS -N working
+#PBS -q small
+
+echo $PBS_EXEC
+echo which python
+which python
+cd $PBS_O_WORKDIR
+echo PBS_O_WORKDIR is `pwd`
+echo which python
+which python
+echo Hello, World!
+module load conda
+conda activate rebx-3.4.1
+echo which python
+which python
