@@ -1,2 +1,11 @@
 #!/bin/sh
-echo This is a test.
+#PBS -j oe
+#PBS -l select=1:ncpus=1
+#PBS -l walltime=00:01:00
+#PBS -m abe
+#PBS -M barons2@unlv.nevada.edu
+#PBS -N script_test
+#PBS -q small
+
+echo Testing...
+echo $1
