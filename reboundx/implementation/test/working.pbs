@@ -1,21 +1,9 @@
 #PBS -j oe
-#PBS -N rebx_test
 #PBS -l select=1:ncpus=1:mem=1gb
 #PBS -l walltime=00:15:00
 #PBS -m abe
 #PBS -M barons2@unlv.nevada.edu
+#PBS -N working_test
 #PBS -q small
-set -x
-trap "cd $PBS_O_WORKDIR;mkdir $PBS_JOBID;cp -R $TMPDIR/* $PBS_JOBID;exit" TERM
-module load conda
-source activate rebx-3.4.1
-echo ----
-echo Job started on `date`
-echo Working on compute node `cat $PBS_NODEFILE`
-cd $PBS_O_WORKDIR
-echo PBS_O_WORKDIR is `pwd`
-echo ----
+
 python ./args.py 123
-echo ----
-echo Job ended at `date`
-exit 0
