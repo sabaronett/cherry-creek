@@ -3,9 +3,9 @@
 #PBS -l walltime=00:15:00
 #PBS -m abe
 #PBS -M barons2@unlv.nevada.edu
-#PBS -N working_test
+#PBS -N working
 #PBS -q small
 
 cd $PBS_O_WORKDIR
 echo PBS_O_WORKDIR is `pwd`
-python args.py 123
+echo Hello, World!
