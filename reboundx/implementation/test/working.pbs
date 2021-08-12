@@ -6,6 +6,5 @@
 #PBS -N working
 #PBS -q small
 
-cd $PBS_O_WORKDIR
 echo PBS_O_WORKDIR is `pwd`
 echo Hello, World!
