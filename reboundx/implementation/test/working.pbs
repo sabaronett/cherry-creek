@@ -1,10 +1,11 @@
 #PBS -j oe
-#PBS -l select=1:ncpus=1:mem=1gb
+#PBS -l select=1:ncpus=1
 #PBS -l walltime=00:15:00
 #PBS -m abe
 #PBS -M barons2@unlv.nevada.edu
 #PBS -N working
 #PBS -q small
 
+cd $PBS_O_WORKDIR
 echo PBS_O_WORKDIR is `pwd`
 echo Hello, World!
