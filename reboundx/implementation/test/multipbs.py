@@ -15,7 +15,7 @@ with open('processes.txt', 'w') as f:
               '-N', 'test_{:.1f}au'.format(au),
               '-q', 'small',
               '-S', '/home/barons2/.conda/envs/rebx-3.4.1/bin/python',
-              '--', 'python', pwd+'/args.py', '{:.1f}'.format(au)]
+              pwd+'/args.py', '{:.1f}'.format(au)]
         complete = subprocess.run(rc)
         f.write('args = %s\n'%(complete.args))
         f.write('  returncode = %s\n'%(complete.returncode))
