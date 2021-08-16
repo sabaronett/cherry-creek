@@ -1,3 +1,6 @@
 .vscode
 *.code-workspace
 *.ipynb_checkpoints
+test/
+tests/
+old/
