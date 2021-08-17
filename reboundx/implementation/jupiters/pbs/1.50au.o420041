@@ -1,0 +1,18 @@
+---------------------------------
+REBOUND version:     	3.17.4
+REBOUND built on:    	Aug 11 2021 08:51:58
+Number of particles: 	2
+Selected integrator: 	whfast
+Simulation time:     	0.0000000000000000e+00
+Current timestep:    	0.050000
+---------------------------------
+<rebound.particle.Particle object at 0x7fcc101cc740, m=0.9894888093406266 x=-0.0014460064643822686 y=0.0 z=0.0 vx=0.0 vy=-0.004921753822712073 vz=0.0>
+<rebound.particle.Particle object at 0x7fcc101cc0c0, m=0.0009547919 x=1.4985539935356178 y=0.0 z=0.0 vx=0.0 vy=5.100609179762675 vz=0.0>
+---------------------------------
+Two particles collided (d < r1+r2)
+________________________________
+Job Resource Usage Summary
+
+    Real Memory Used : 31mb
+    Walltime Used    : 00:06:52
+________________________________
