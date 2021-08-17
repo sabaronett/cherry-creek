@@ -2,7 +2,7 @@ import subprocess
 import numpy as np
 
 pwd = '/home/barons2/github/sabaronett/cherry-creek/reboundx/implementation/jupiters/'
-init_as = np.arange(1.69, 1.72, 0.01) # in au
+init_as = np.arange(1.60, 2.02, 0.02) # in au
 
 for a in init_as:
     rc = ['qsub',
