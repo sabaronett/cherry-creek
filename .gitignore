@@ -1,6 +1,26 @@
-.vscode
+# Files
+*bar.py
+dual*.py
+*plot*.py
+*plt.py
+engulftimes.txt
+finalas.txt
+*maxmems.txt
+*runtimes.txt
+
+# Extensions
 *.code-workspace
+*.eps
+*.ipynb
 *.ipynb_checkpoints
+*.pdf
+*.png
+*.vscode
+*.zip
+
+# Folders
+local/
+old/
+output/
 test/
 tests/
-old/
