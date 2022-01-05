@@ -4,16 +4,16 @@ import matplotlib.ticker as mticker
 
 # load REBOUND data
 data = np.loadtxt('output/m.txt') # return (N, 2) array
-ts = data[:, 0]                        # return only 1st col
-mass = data[:, 1]                      # return only 2nd col
+ts = data[:, 0]                   # return only 1st col
+mass = data[:, 1]                 # return only 2nd col
 data = np.loadtxt('output/r.txt')
-radius = data[:, 1]                    # data in AU
-p = 5                                  # number of planets
+radius = data[:, 1]               # data in AU
+p = 5                             # number of planets
 atides = np.zeros([ts.size, p])
 for j in range(1, p):
     fname = 'output/p' + str(j) + '_ET.txt'
     data = np.loadtxt(fname)
-    atides[:, j] = data[:, 1]          # data in AU
+    atides[:, j] = data[:, 1]     # data in AU
 
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
